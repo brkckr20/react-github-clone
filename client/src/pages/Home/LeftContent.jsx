@@ -1,7 +1,7 @@
 import { Alert, AlertIcon, Button, Text } from '@chakra-ui/react'
 import React from 'react'
 
-const RightContent = () => {
+const LeftContent = () => {
     return (
         <div>
             <Alert status='warning' display={"flex"} justifyContent="space-between" padding="25px">
@@ -13,4 +13,4 @@ const RightContent = () => {
     )
 }
 
-export default RightContent
+export default LeftContent
