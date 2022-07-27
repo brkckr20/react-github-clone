@@ -1,0 +1,20 @@
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    min-width: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: rgb(172, 172, 172);
+}
+
+.fade {
+    transition: all .3s ease-in-out;
+}
