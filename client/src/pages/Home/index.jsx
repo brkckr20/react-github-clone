@@ -3,7 +3,7 @@ import { Grid, GridItem, Box } from '@chakra-ui/react'
 import LeftContent from './LeftContent'
 const Home = () => {
     return (
-        <Box width="100%" padding="20px">
+        <Box width="100%" padding="20px" backgroundColor="gray.50">
             <Grid
                 h='100%'
                 templateColumns='repeat(9, 1fr)'
