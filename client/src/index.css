@@ -15,3 +15,12 @@ code {
 #content-wrapper {
   display: flex;
 }
+
+.beta {
+  padding: 0px 5px;
+  border: 1px solid forestgreen;
+  color: forestgreen;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+}

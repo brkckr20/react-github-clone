@@ -49,7 +49,7 @@ const Sidebar = () => {
                         <span>brkckr20/patikanodejs</span>
                     </div>
                     <Box paddingTop="25px" paddingBottom="25px">
-                        <Text fontSize="sm" color="gray.500">Show more</Text>
+                        <Text fontSize="sm" color="gray.500" transition="all" _hover={{ color: "blue" }} style={{ cursor: "pointer" }} transitionDuration={".3s"}>Show more</Text>
                     </Box>
                     <Box>
                         <Divider />
