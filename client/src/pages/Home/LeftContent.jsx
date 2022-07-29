@@ -1,3 +1,6 @@
+
+import { SunIcon, AtSignIcon } from '@chakra-ui/icons';
+
 import {
     Alert,
     AlertIcon,
@@ -13,8 +16,9 @@ import {
     Menu,
     MenuButton,
     MenuList,
-    MenuItem
-} from '@chakra-ui/react'
+    MenuItem,
+    Divider
+} from '@chakra-ui/react';
 import React from 'react'
 import { FaAngleDown } from 'react-icons/fa'
 
@@ -37,7 +41,7 @@ const LeftContent = () => {
                         <TabPanel>
                             <Box display={"flex"}>
                                 <Box><Image border={"1px"} borderColor="gray.500" width="32px" rounded="full" src='https://avatars.githubusercontent.com/u/2500557?s=64&v=4' /></Box>
-                                <Box>
+                                <Box className='width100'>
                                     <Box display={"flex"} width="100%" justifyContent="space-between" alignItems="center"><Text as="p" paddingLeft={"10px"}><span style={{ fontWeight: "bold" }}>tayfunerbilen</span> created a repository <span style={{ fontWeight: "bold" }}>tayfunerbilen/instagram-react-web-clone</span></Text><Text as="span" color="gray.400" paddingLeft={"10px"} fontSize="sm">8 days ago</Text></Box>
                                     <Box
                                         display="flex"
@@ -65,9 +69,10 @@ const LeftContent = () => {
                                     </Box>
                                 </Box>
                             </Box>
+                            <Divider marginBottom={"20px"} marginTop="10px" />
                             <Box display={"flex"}>
                                 <Box><Image border={"1px"} borderColor="gray.500" width="32px" rounded="full" src='https://avatars.githubusercontent.com/u/2500557?s=64&v=4' /></Box>
-                                <Box>
+                                <Box className='width100'>
                                     <Box display={"flex"} width="100%" justifyContent="space-between" alignItems="center"><Text as="p" paddingLeft={"10px"}><span style={{ fontWeight: "bold" }}>tayfunerbilen</span> created a repository <span style={{ fontWeight: "bold" }}>tayfunerbilen/instagram-react-web-clone</span></Text><Text as="span" color="gray.400" paddingLeft={"10px"} fontSize="sm">8 days ago</Text></Box>
                                     <Box
                                         display="flex"
@@ -95,9 +100,10 @@ const LeftContent = () => {
                                     </Box>
                                 </Box>
                             </Box>
+                            <Divider marginBottom={"20px"} marginTop="10px" />
                             <Box display={"flex"}>
                                 <Box><Image border={"1px"} borderColor="gray.500" width="32px" rounded="full" src='https://avatars.githubusercontent.com/u/2500557?s=64&v=4' /></Box>
-                                <Box>
+                                <Box className='width100'>
                                     <Box display={"flex"} width="100%" justifyContent="space-between" alignItems="center"><Text as="p" paddingLeft={"10px"}><span style={{ fontWeight: "bold" }}>tayfunerbilen</span> created a repository <span style={{ fontWeight: "bold" }}>tayfunerbilen/instagram-react-web-clone</span></Text><Text as="span" color="gray.400" paddingLeft={"10px"} fontSize="sm">8 days ago</Text></Box>
                                     <Box
                                         display="flex"
@@ -125,9 +131,10 @@ const LeftContent = () => {
                                     </Box>
                                 </Box>
                             </Box>
+                            <Divider marginBottom={"20px"} marginTop="10px" />
                             <Box display={"flex"}>
                                 <Box><Image border={"1px"} borderColor="gray.500" width="32px" rounded="full" src='https://avatars.githubusercontent.com/u/2500557?s=64&v=4' /></Box>
-                                <Box>
+                                <Box className='width100'>
                                     <Box display={"flex"} width="100%" justifyContent="space-between" alignItems="center"><Text as="p" paddingLeft={"10px"}><span style={{ fontWeight: "bold" }}>tayfunerbilen</span> created a repository <span style={{ fontWeight: "bold" }}>tayfunerbilen/instagram-react-web-clone</span></Text><Text as="span" color="gray.400" paddingLeft={"10px"} fontSize="sm">8 days ago</Text></Box>
                                     <Box
                                         display="flex"
@@ -154,6 +161,15 @@ const LeftContent = () => {
                                         </Box>
                                     </Box>
                                 </Box>
+                            </Box>
+                            <Divider marginBottom={"20px"} marginTop="10px" />
+                            <Box>
+                                <Text as="p" fontSize="xs"><SunIcon /><Text as={"span"} fontWeight="bold" fontSize="sm"> ProTip!</Text> The feed shows you events from people you <Text as={"a"} color="blue.600">follow</Text> and repositories you <Text as={"a"} color="blue.600">watch</Text> or <Text as={"a"} color="blue.600">star</Text>.</Text>
+                            </Box>
+                            <Box>
+                                <Text as="p" fontSize="xs"><AtSignIcon />
+                                    <Text paddingLeft={"1"} _hover={{ textDecoration: "underline", color: "blue" }} as="span">Subscribe to your news feed</Text>
+                                </Text>
                             </Box>
                         </TabPanel>
                         <TabPanel>
