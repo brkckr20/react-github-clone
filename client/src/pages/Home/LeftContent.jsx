@@ -21,6 +21,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react'
 import { FaAngleDown } from 'react-icons/fa'
+import Footer from '../../components/Footer';
 
 const LeftContent = () => {
     return (
@@ -171,6 +172,7 @@ const LeftContent = () => {
                                     <Text paddingLeft={"1"} _hover={{ textDecoration: "underline", color: "blue" }} as="span">Subscribe to your news feed</Text>
                                 </Text>
                             </Box>
+                            <Footer />
                         </TabPanel>
                         <TabPanel>
                             <p>two!</p>
