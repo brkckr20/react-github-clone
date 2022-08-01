@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid, GridItem, Box } from '@chakra-ui/react'
 import LeftContent from './LeftContent'
+import RightContent from './RightContent'
 const Home = () => {
     return (
         <Box width="100%" padding="20px" backgroundColor="gray.50">
@@ -12,7 +13,9 @@ const Home = () => {
                 <GridItem colSpan="6">
                     <LeftContent />
                 </GridItem>
-                <GridItem colSpan="3" bg='tomato' />
+                <GridItem colSpan="3">
+                    <RightContent />
+                </GridItem>
             </Grid>
         </Box>
     )

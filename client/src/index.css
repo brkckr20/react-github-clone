@@ -28,3 +28,26 @@ code {
 .width100 {
   width: 100% !important;
 }
+
+.right-top-list-item::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(133, 133, 133, 0.555);
+  left: -23px;
+  top: 0px;
+  border-radius: 50%;
+}
+
+
+
+.right-top-list::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(133, 133, 133, 0.555);
+  left: -20px;
+  top: 0px;
+}
