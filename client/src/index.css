@@ -51,3 +51,18 @@ code {
   left: -20px;
   top: 0px;
 }
+
+span.color {
+  position: relative;
+}
+
+span.color::after {
+  position: absolute;
+  left: -23px;
+  top: 1px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+  border-radius: 50%;
+}

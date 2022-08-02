@@ -13,7 +13,7 @@ const Sidebar = () => {
                     marginBottom="4px"
                 >
                     <Text as="h4">Your repositories</Text>
-                    <Button size="sm" colorScheme="green" ><i class="fa-solid fa-display my-icon"></i>New</Button>
+                    <Button size="sm" colorScheme="green" ><i className="fa-solid fa-display my-icon"></i>New</Button>
                 </Box>
                 <Box marginBottom="16px">
                     <Input placeholder='Find a repository...' size="md" />

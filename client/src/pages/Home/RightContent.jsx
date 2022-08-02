@@ -32,6 +32,34 @@ function RightContent() {
 
                 </List>
             </Box>
+            <Box marginTop={6}>
+                <Text marginBottom={6} as="p" fontWeight={"bold"}>Explore repositories</Text>
+                <Box borderBottom={"1px solid"} borderColor="gray.300" paddingBottom={3} marginBottom={3}>
+                    <Text as="p" fontWeight={"bold"}>shivarajnaidu/simple-login-service-with-nodejs-mongodb</Text>
+                    <Text as="p" fontWeight="light" fontSize={"15px"} color="gray.600">Simple Login Service Using NodeJs And MongoDB</Text>
+                    <Box>
+                        <span className='color'>JavaScript</span>
+                        <span className='star'>3</span>
+                    </Box>
+                </Box>
+                <Box borderBottom={"1px solid"} borderColor="gray.300" paddingBottom={3} marginBottom={3}>
+                    <Text as="p" fontWeight={"bold"}>shivarajnaidu/simple-login-service-with-nodejs-mongodb</Text>
+                    <Text as="p" fontWeight="light" fontSize={"15px"} color="gray.600">Simple Login Service Using NodeJs And MongoDB</Text>
+                    <Box>
+                        <span className='color'>JavaScript</span>
+                        <span className='star'>3</span>
+                    </Box>
+                </Box>
+                <Box paddingBottom={3} marginBottom={3}>
+                    <Text as="p" fontWeight={"bold"}>shivarajnaidu/simple-login-service-with-nodejs-mongodb</Text>
+                    <Text as="p" fontWeight="light" fontSize={"15px"} color="gray.600">Simple Login Service Using NodeJs And MongoDB</Text>
+                    <Box>
+                        <span className='color'>JavaScript</span>
+                        <span className='star'>3</span>
+                    </Box>
+                </Box>
+                <Text marginBottom={6} as="p" _hover={{ color: "blue", cursor: "pointer" }} fontSize={"12"} fontWeight={"light"}>Explore more...</Text>
+            </Box>
         </Box>
     )
 }
