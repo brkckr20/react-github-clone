@@ -3,6 +3,10 @@ ul.navbar-ul {
     list-style: none;
 }
 
+ul.navbar-ul li a {
+    color: white;
+}
+
 ul.navbar-ul li {
     min-width: 100px;
     text-align: center;
