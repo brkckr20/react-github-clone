@@ -34,7 +34,7 @@ function Navbar() {
                         <InputRightElement style={{ position: "relative" }} children={<Slash />} />
                     </InputGroup>
                     <ul className="navbar-ul">
-                        <li><Link to="pull">Pull requests</Link></li>
+                        <li><Link to="pulls">Pull requests</Link></li>
                         <li>Issuee</li>
                         <li>Marketplace</li>
                         <li>Explore</li>

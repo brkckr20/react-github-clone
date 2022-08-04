@@ -10,7 +10,7 @@ const Content = () => {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/pull">
+                <Route path="/pulls">
                     <PullRequests />
                 </Route>
             </Switch>
