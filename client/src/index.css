@@ -66,3 +66,14 @@ span.color::after {
   background-color: rgb(238, 238, 5);
   border-radius: 50%;
 }
+
+
+#card-body div.custom-circle::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 2px;
+  height: 2px;
+  background: #000;
+}
