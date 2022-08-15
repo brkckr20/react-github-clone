@@ -1,7 +1,23 @@
+import { useState } from 'react';
 import { Box, Button, ButtonGroup, Container, Grid, GridItem, Input, InputGroup, InputLeftElement, Menu, MenuButton, MenuItem, MenuList, Text } from '@chakra-ui/react';
 import { ChevronDownIcon, LinkIcon, SearchIcon, SunIcon } from '@chakra-ui/icons';
+import { useEffect } from 'react';
+
 
 const PullRequests = () => {
+
+    const [selectedTab, setSelectedTab] = useState("Created");
+    const [protipText, setProtipText] = useState("Exclude your own issues with -")
+
+    const changeTab = (text, protipText) => {
+        setSelectedTab(text);
+        setProtipText(protipText);
+    }
+
+
+    useEffect(() => {
+        /* console.log("Secilen Tab : ", selectedTab) */
+    }, [selectedTab])
 
     return (
         <Box style={{ margin: "0 auto" }}>
@@ -13,10 +29,10 @@ const PullRequests = () => {
 
                     >
                         <ButtonGroup>
-                            <Button fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "10px 0 0 10px" }} size='sm' border={"1px"} bg={"transparent"} borderColor="gray.200">Created</Button>
-                            <Button fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0" }} borderRadius="0" size='sm' border={"1px"} borderColor="gray.200" bg={"transparent"}>Assigned</Button>
-                            <Button fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0" }} borderRadius="0" size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Mentioned</Button>
-                            <Button fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "0 10px 10px 0" }} size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Review requests</Button>
+                            <Button onClick={() => changeTab("Created", "Exclude your own issues with -")} bg={`${selectedTab === 'Created' ? '#0969da' : 'transparent'}`} color={`${selectedTab === 'Created' ? 'white' : ''}`} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "10px 0 0 10px" }} size='sm' border={"1px"} borderColor="gray.200">Created</Button>
+                            <Button onClick={() => changeTab("Assigned", "What’s not been updated in a month:")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0" }} borderRadius="0" size='sm' border={"1px"} borderColor="gray.200" bg={"transparent"}>Assigned</Button>
+                            <Button onClick={() => changeTab("Mentioned", "Mix and match filters to narrow down what you’re looking for.")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0" }} borderRadius="0" size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Mentioned</Button>
+                            <Button onClick={() => changeTab("Review requests", "Ears burning? Get @brkckr20 mentions with mentions:brkckr20.")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "0 10px 10px 0" }} size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Review requests</Button>
                         </ButtonGroup>
 
                     </GridItem>
@@ -87,12 +103,12 @@ const PullRequests = () => {
                     </Box>
                 </Box>
                 <Box textAlign="center" marginTop="16px">
-                    <Text as="p" fontSize="16px"><SunIcon /><Text as={"span"} fontWeight="bold" fontSize="15px"> ProTip!</Text> <Text as="span" color="gray.600">Exclude your own issues with -</Text><Text as={"a"} color="blue.600">author:brkckr20.</Text></Text>
+                    <Text as="p" fontSize="16px"><SunIcon /><Text as={"span"} fontWeight="bold" fontSize="15px"> ProTip!</Text> <Text as="span" color="gray.600">{protipText}</Text><Text as={"a"} color="blue.600">author:brkckr20.</Text></Text>
                 </Box>
                 <Box display="flex" borderTop="1px" borderColor="gray.300" marginTop="40px" paddingTop="40px">
                     <Box display="flex" justifyContent="center" alignItems="center">
-                        <svg fill='#888a8d' aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
-                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                        <svg fill='#888a8d' aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" className="octicon octicon-mark-github">
+                            <path fillRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                         </svg>
                         <Box as="span" marginLeft="10px" fontSize="12px" color="gray.600">© 2022 GitHub, Inc.</Box>
                     </Box>
