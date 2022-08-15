@@ -77,3 +77,12 @@ span.color::after {
   height: 2px;
   background: #000;
 }
+
+ul.pulls-footer {
+  list-style: none;
+}
+
+ul.pulls-footer li {
+  float: left;
+  margin: 0 10px;
+}
