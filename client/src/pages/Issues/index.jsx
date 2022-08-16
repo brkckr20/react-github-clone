@@ -2,10 +2,7 @@ import { useState, useEffect } from 'react';
 import { Box, Button, ButtonGroup, Container, Grid, GridItem, Input, InputGroup, InputLeftElement, Menu, MenuButton, MenuItem, MenuList, Text } from '@chakra-ui/react';
 import { ChevronDownIcon, LinkIcon, SearchIcon, SunIcon } from '@chakra-ui/icons';
 
-
-
-const PullRequests = () => {
-
+function Issues() {
     const [selectedTab, setSelectedTab] = useState("Created");
     const [protipText, setProtipText] = useState("Exclude your own issues with -")
 
@@ -31,8 +28,7 @@ const PullRequests = () => {
                         <ButtonGroup>
                             <Button onClick={() => changeTab("Created", "Exclude your own issues with -")} bg={`${selectedTab === 'Created' ? '#0969da' : 'transparent'}`} color={`${selectedTab === 'Created' ? 'white' : ''}`} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "10px 0 0 10px" }} size='sm' border={"1px"} borderColor="gray.200">Created</Button>
                             <Button onClick={() => changeTab("Assigned", "What’s not been updated in a month:")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0" }} borderRadius="0" size='sm' border={"1px"} borderColor="gray.200" bg={"transparent"}>Assigned</Button>
-                            <Button onClick={() => changeTab("Mentioned", "Mix and match filters to narrow down what you’re looking for.")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0" }} borderRadius="0" size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Mentioned</Button>
-                            <Button onClick={() => changeTab("Review requests", "Ears burning? Get @brkckr20 mentions with mentions:brkckr20.")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "0 10px 10px 0" }} size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Review requests</Button>
+                            <Button onClick={() => changeTab("Mentioned", "Mix and match filters to narrow down what you’re looking for.")} fontWeight="light" _focus={{ backgroundColor: "#0969da", color: "white" }} style={{ margin: "0", borderRadius: "0 10px 10px 0" }} size='sm' border={"1px"} borderColor="gray.200" bg={`transparent`}>Mentioned</Button>
                         </ButtonGroup>
 
                     </GridItem>
@@ -131,4 +127,4 @@ const PullRequests = () => {
     )
 }
 
-export default PullRequests
+export default Issues

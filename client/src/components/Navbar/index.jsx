@@ -35,8 +35,8 @@ function Navbar() {
                     </InputGroup>
                     <ul className="navbar-ul">
                         <li><Link to="pulls">Pull requests</Link></li>
-                        <li>Issuee</li>
-                        <li>Marketplace</li>
+                        <li><Link to="issues">Issues</Link></li>
+                        <li><Link to="marketplace">Marketplace</Link></li>
                         <li>Explore</li>
                     </ul>
                 </Flex>
