@@ -14,6 +14,7 @@ code {
 
 #content-wrapper {
   display: flex;
+  overflow: hidden;
 }
 
 .beta {
