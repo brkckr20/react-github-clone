@@ -87,7 +87,8 @@ export const filters = [
 export const apps = [
     {
         id: 1,
-        logo: "https://images.unsplash.com/photo-1659631222920-4e085f98a4e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+        avatarIcon: "https://avatars.githubusercontent.com/ml/706?s=62&v=4",
+        avatarBgColor: "#F7C20F",
         appName: "Rewind Backups for GitHub (Formerly BackHub)",
         author: "By Backhub",
         title: "Daily, automatic backups of your repos and metadata. Restore your backups with metadata in seconds + Sync to your S3 or Azure",
@@ -95,10 +96,39 @@ export const apps = [
     },
     {
         id: 2,
-        logo: "https://images.unsplash.com/photo-1659631222920-4e085f98a4e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
-        appName: "Rewind Backups for GitHub (Formerly BackHub)",
-        author: "By Backhub 2",
-        title: "Daily, automatic backups of your repos and metadata. Restore your backups with metadata in seconds + Sync to your S3 or Azure",
+        avatarIcon: "https://avatars.githubusercontent.com/ml/497?s=62&v=4",
+        avatarBgColor: "#438977",
+        appName: "Imgbot",
+        author: "By Imgbot",
+        title: "A GitHub app that optimizes your images",
         install: "Recommended"
-    }
+    },
+    {
+        id: 3,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/6693?s=62&v=4",
+        avatarBgColor: "#ffffff",
+        appName: "Testspace.com",
+        author: null,
+        title: "Test Management software for DevOps, including CI Results Dashboard, Manual Test Case Management, and Exploratory testing",
+        install: "740 Installs"
+    },
+    {
+        id: 4,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/4950?s=62&v=4",
+        avatarBgColor: "#0369A1",
+        appName: "BuildPulse",
+        author: "Bu Workshop64",
+        title: "Automatically detect, track, and rank flaky tests so you can regain trust in your test suite",
+        install: "120 Installs"
+    },
+    {
+        id: 5,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/4531?s=62&v=4",
+        avatarBgColor: "#0369A1",
+        appName: "Honeybadger.io",
+        author: "Bu honey-badger.io",
+        title: "The web developer's secret weapon",
+        install: "603 Installs"
+    },
+
 ]
