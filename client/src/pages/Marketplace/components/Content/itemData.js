@@ -132,3 +132,53 @@ export const apps = [
     },
 
 ]
+
+
+export const apps2 = [
+    {
+        id: 1,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/704?s=62&v=4",
+        avatarBgColor: "#ffffff",
+        appName: "CodeFactor",
+        author: "By codefactor-io",
+        title: "Automated code review for GitHub",
+        install: "Recommended"
+    },
+    {
+        id: 2,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/4693?s=62&v=4",
+        avatarBgColor: "#ffffff",
+        appName: "CommitCheck",
+        author: "By CommitCheckApp",
+        title: "CommitCheck ensures your commit messages are consistent and contain all required information",
+        install: "914 Installs"
+    },
+    {
+        id: 3,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/6693?s=62&v=4",
+        avatarBgColor: "#ffffff",
+        appName: "Testspace.com",
+        author: null,
+        title: "Test Management software for DevOps, including CI Results Dashboard, Manual Test Case Management, and Exploratory testing",
+        install: "740 Installs"
+    },
+    {
+        id: 4,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/4950?s=62&v=4",
+        avatarBgColor: "#0369A1",
+        appName: "BuildPulse",
+        author: "Bu Workshop64",
+        title: "Automatically detect, track, and rank flaky tests so you can regain trust in your test suite",
+        install: "120 Installs"
+    },
+    {
+        id: 5,
+        avatarIcon: "https://avatars.githubusercontent.com/ml/4531?s=62&v=4",
+        avatarBgColor: "#0369A1",
+        appName: "Honeybadger.io",
+        author: "Bu honey-badger.io",
+        title: "The web developer's secret weapon",
+        install: "603 Installs"
+    },
+
+]
