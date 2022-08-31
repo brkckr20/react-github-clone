@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import PullRequests from '../../pages/PullRequests';
 import Issues from '../../pages/Issues';
 import Marketplace from '../../pages/Marketplace';
+import Explore from '../../pages/Explore';
 
 const Content = () => {
     return (
@@ -20,6 +21,9 @@ const Content = () => {
                 </Route>
                 <Route path="/marketplace">
                     <Marketplace />
+                </Route>
+                <Route path="/explore">
+                    <Explore />
                 </Route>
             </Switch>
         </>
