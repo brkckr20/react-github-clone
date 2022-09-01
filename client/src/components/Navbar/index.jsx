@@ -37,7 +37,7 @@ function Navbar() {
                         <li><Link to="pulls">Pull requests</Link></li>
                         <li><Link to="issues">Issues</Link></li>
                         <li><Link to="marketplace">Marketplace</Link></li>
-                        <li>Explore</li>
+                        <li><Link to="explore">Explore</Link></li>
                     </ul>
                 </Flex>
             </Box>
