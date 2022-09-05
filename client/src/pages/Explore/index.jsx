@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Button, Container, Divider, Grid, GridItem, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react';
 import { Link, useRouteMatch } from "react-router-dom";
 import ExploreCard from './ExploreCard';
+import { exploreCardData } from './data'
 const Explore = () => {
 
     const { path } = useRouteMatch();
@@ -40,7 +41,11 @@ const Explore = () => {
                         </GridItem>
                         <GridItem colSpan={6} padding="24px 16px">
                             <Text as="h3" fontSize="20px" fontWeight="semibold" color="#57606a">Here's what we found based on your interests...</Text>
-                            <ExploreCard />
+                            {
+                                exploreCardData.map((item, i) => (
+                                    <ExploreCard key={i} item={item} />
+                                ))
+                            }
                         </GridItem>
                         <GridItem bg='blue.500' colSpan={3}>
 
