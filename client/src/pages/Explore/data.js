@@ -63,3 +63,31 @@ export const trendingRepositoryData = [
         star: "14.3k"
     }
 ]
+
+
+export const trendingDeveloperData = [
+    {
+        imageUrl: "https://avatars.githubusercontent.com/u/130929?s=100&v=4",
+        name: "Henrik Rydgård",
+        username: "hrydgard",
+        repoName: "ppsspp"
+    },
+    {
+        imageUrl: "https://avatars.githubusercontent.com/u/11875?s=100&v=4",
+        name: "Earle F. Philhower, III",
+        username: "earlephilhower",
+        repoName: "arduino-pico"
+    },
+    {
+        imageUrl: "https://avatars.githubusercontent.com/u/1927579?s=100&v=4",
+        name: "Zoltan Kochan",
+        username: "zkochan",
+        repoName: "packages"
+    },
+    {
+        imageUrl: "https://avatars.githubusercontent.com/u/6440154?s=100&v=4",
+        name: "Dev Ojha",
+        username: "ValarDragon",
+        repoName: "CTF-Crypto"
+    }
+]
