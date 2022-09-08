@@ -5,6 +5,7 @@ import PullRequests from '../../pages/PullRequests';
 import Issues from '../../pages/Issues';
 import Marketplace from '../../pages/Marketplace';
 import Explore from '../../pages/Explore';
+import Topics from '../../pages/Explore/tabs/Topics';
 
 const Content = () => {
     return (
@@ -22,8 +23,11 @@ const Content = () => {
                 <Route path="/marketplace">
                     <Marketplace />
                 </Route>
-                <Route path="/explore">
+                <Route exact path="/explore">
                     <Explore />
+                </Route>
+                <Route exact path="/explore/topics">
+                    <Topics />
                 </Route>
             </Switch>
         </>
