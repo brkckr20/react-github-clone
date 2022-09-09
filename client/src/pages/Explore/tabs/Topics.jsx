@@ -3,6 +3,7 @@ import { Link, useRouteMatch } from 'react-router-dom'
 import { Box, Button, Container, Grid, GridItem, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react'
 import { useEffect } from 'react';
 
+import { exploreTopics } from './data'
 
 const Topics = () => {
 
@@ -10,7 +11,7 @@ const Topics = () => {
 
 
     useEffect(() => {
-        document.title = "Topics on Github"
+        document.title = "Topics on Github";
     }, [])
 
     return (
@@ -41,7 +42,7 @@ const Topics = () => {
                         marginY="40px"
                     >
                         <GridItem colSpan="1">
-                            <Box textAlign="center" position="relative" padding="32px" border="1px" borderColor="gray.200" borderRadius="7px" _hover={{ transform: "scale(1.05)", transition: "all .3s ease-in-out" }}>
+                            <Box textAlign="center" position="relative" padding="32px" border="1px" borderColor="gray.200" borderRadius="7px" _hover={{ transform: "scale(1.02)", transition: "all .3s ease-in-out" }}>
                                 <Box display="flex" justifyContent="center" margin="0 0 16px 0"><Image width="64px" src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png' alt="nodejs"></Image></Box>
                                 <Text as="h2" marginTop="4px" fontSize="20px" color="#24292F" >NodeJS</Text>
                                 <Text as="p" marginTop="4px" fontSize="15px" color="#57606A" >Node.js is a tool for executing JavaScript in a variety of environments.</Text>
@@ -53,15 +54,78 @@ const Topics = () => {
                             </Box>
                         </GridItem>
                         <GridItem colSpan="1">
-                            2
+                            <Box textAlign="center" position="relative" padding="32px" border="1px" borderColor="gray.200" borderRadius="7px" _hover={{ transform: "scale(1.02)", transition: "all .3s ease-in-out" }}>
+                                <Box display="flex" justifyContent="center" margin="0 0 16px 0"><Image width="64px" src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/emacs/emacs.png' alt="emacs"></Image></Box>
+                                <Text as="h2" marginTop="4px" fontSize="20px" color="#24292F" >Emacs</Text>
+                                <Text as="p" marginTop="4px" fontSize="15px" color="#57606A" >Emacs is an extensible, customizable, free text editor and computing environment.</Text>
+                                <Box position="absolute" right="10px" top="10px">
+                                    <svg height="20" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="20" data-view-component="true" className="octicon octicon-star">
+                                        <path fillRule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+                                    </svg>
+                                </Box>
+                            </Box>
                         </GridItem>
                         <GridItem colSpan="1">
-                            3
+                            <Box textAlign="center" position="relative" padding="32px" border="1px" borderColor="gray.200" borderRadius="7px" _hover={{ transform: "scale(1.02)", transition: "all .3s ease-in-out" }}>
+                                <Box display="flex" justifyContent="center" margin="0 0 16px 0"><Image width="64px" src='https://raw.githubusercontent.com/github/explore/f3e22f0dca2be955676bc70d6214b95b13354ee8/topics/c/c.png' alt="c"></Image></Box>
+                                <Text as="h2" marginTop="4px" fontSize="20px" color="#24292F" >C</Text>
+                                <Text as="p" marginTop="4px" fontSize="15px" color="#57606A" >C is a general purepos programming  purepos language that first appeared in 1972.</Text>
+                                <Box position="absolute" right="10px" top="10px">
+                                    <svg height="20" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="20" data-view-component="true" className="octicon octicon-star">
+                                        <path fillRule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+                                    </svg>
+                                </Box>
+                            </Box>
+                        </GridItem>
+                    </Grid>
+                    <Grid
+                        h='100%'
+                        templateColumns='repeat(3, 1fr)'
+                        gap={4}
+                        marginY="40px"
+                    >
+                        <GridItem
+                            colSpan={2}
+                        >
+                            <Text as="h1" fontSize="24px" fontWeight="semibold">All featured topics</Text>
+                            {
+                                exploreTopics.map((data, i) => (
+                                    <Box key={i} display="flex" borderBottom="1px" paddingBottom="25px" marginTop="25px" borderColor="gray.400">
+                                        {data.image ? (
+                                            <Box>
+                                                <Image width="60px" src={data.image} alt='topics image' />
+                                            </Box>
+                                        ) : (
+                                            <>
+                                                <Box backgroundColor="#ddf4ff" padding="15px 25px" borderRadius="7px">#</Box>
+                                            </>
+                                        )}
+                                        <Box flex={1} marginLeft="10px">
+                                            <Box fontSize="20px" fontWeight="semibold">{data.title}</Box>
+                                            <Box fontSize="14px">{data.description}</Box>
+                                        </Box>
+                                        <Box>
+                                            <Box border="1px" borderRadius="5px" display="flex" alignItems="center" borderColor="gray.300" fontSize="12px" backgroundColor="#f6f8fa" padding="3px 12px">
+                                                <svg height="12" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="20" data-view-component="true" className="octicon octicon-star">
+                                                    <path fillRule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+                                                </svg>
+                                                <Text as="span" fontWeight="semibold">Star</Text>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                ))
+                            }
+
+                        </GridItem>
+                        <GridItem
+                            colSpan={1}
+                        >
+                            1 birim
                         </GridItem>
                     </Grid>
                 </Container>
-            </Box>
-        </Box>
+            </Box >
+        </Box >
     )
 }
 
