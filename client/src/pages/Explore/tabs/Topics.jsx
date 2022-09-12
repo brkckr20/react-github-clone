@@ -1,9 +1,8 @@
-import React from 'react'
-import { Link, useRouteMatch } from 'react-router-dom'
-import { Box, Button, Container, Grid, GridItem, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react'
 import { useEffect } from 'react';
-
-import { exploreTopics } from './data'
+import { Link, useRouteMatch } from 'react-router-dom'
+import { Box, Button, Container, Grid, GridItem, Image, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
+import HorizontalFooter from '../../../components/Footer/HorizontalFooter';
+import { exploreTopics, popularTopics } from './data'
 
 const Topics = () => {
 
@@ -119,12 +118,24 @@ const Topics = () => {
                         </GridItem>
                         <GridItem
                             colSpan={1}
+                            paddingX="16px"
                         >
-                            1 birim
+                            <Text as="p" fontSize="16px" fontWeight="semibold">
+                                Popular Topics
+                            </Text>
+                            <SimpleGrid minChildWidth='60px' spacing='5px' mt="5px">
+                                {
+                                    popularTopics.map((data, index) => (
+                                        <Box key={index} textAlign="center" color='#0969DA' bg="#DDF4FF" _hover={{ color: "#DDF4FF", backgroundColor: "#0969DA" }} cursor="pointer" fontWeight="semibold" fontSize="12px" borderRadius="10px" padding="2px 4px">{data.name}</Box>
+                                    ))
+                                }
+
+                            </SimpleGrid>
                         </GridItem>
                     </Grid>
                 </Container>
             </Box >
+            <HorizontalFooter />
         </Box >
     )
 }
