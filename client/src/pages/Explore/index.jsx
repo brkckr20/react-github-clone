@@ -1,37 +1,23 @@
 import React, { useEffect } from 'react'
-import { Box, Button, Container, Divider, Grid, GridItem, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react';
-import { Link, useRouteMatch } from "react-router-dom";
+import { Box, Container, Divider, Grid, GridItem, Image, Text } from '@chakra-ui/react';
 import ExploreCard from './ExploreCard';
 import { exploreCardData, trendingRepositoryData, trendingDeveloperData } from './data'
 import { TbTelescope } from 'react-icons/tb'
 import HorizontalFooter from '../../components/Footer/HorizontalFooter'
+import ExploreHeader from './ExploreHeader';
 
 
 const Explore = () => {
 
-    const { path } = useRouteMatch();
+
 
     useEffect(() => {
         document.title = "Explore GitHub";
-
-
     }, [])
 
     return (
         <Box width="100%">
-            <Box id='explore-header' width="100%" borderBottom="1px" borderColor="gray.200" style={{ position: "sticky", top: "0" }}>
-                <UnorderedList listStyleType="none" display="flex" justifyContent="center" alignItems="center" width="100%" fontSize="14px" marginLeft={100}>
-                    <ListItem marginRight="24px" className='explore-active' padding="16px 0px"><Link to={path}>Explore</Link></ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px"><Link to={`${path}/topics`}>Topics</Link></ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">Trending</ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">Collections</ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">Events</ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">GitHub Sponsors</ListItem>
-                    <Box>
-                        <Button padding="8px 16px" fontSize="14px" color="#24292F" marginLeft="60px" backgroundColor="#F6F8FA" border="1px" borderColor="gray.200">Get email updates</Button>
-                    </Box>
-                </UnorderedList>
-            </Box>
+            <ExploreHeader />
             <Box id="explore-content">
                 <Container width="100vw" maxW='container.xl'>
                     <Grid templateColumns='repeat(12, 1fr)' gap={6}>

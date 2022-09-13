@@ -6,6 +6,8 @@ import Issues from '../../pages/Issues';
 import Marketplace from '../../pages/Marketplace';
 import Explore from '../../pages/Explore';
 import Topics from '../../pages/Explore/tabs/Topics';
+import Trending from '../../pages/Explore/tabs/Trending';
+
 
 const Content = () => {
     return (
@@ -28,6 +30,9 @@ const Content = () => {
                 </Route>
                 <Route exact path="/explore/topics">
                     <Topics />
+                </Route>
+                <Route exact path="/explore/trending">
+                    <Trending />
                 </Route>
             </Switch>
         </>

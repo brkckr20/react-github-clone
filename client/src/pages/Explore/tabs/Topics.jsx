@@ -1,12 +1,11 @@
 import { useEffect } from 'react';
-import { Link, useRouteMatch } from 'react-router-dom'
-import { Box, Button, Container, Grid, GridItem, Image, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
+import { Box, Container, Grid, GridItem, Image, SimpleGrid, Text } from '@chakra-ui/react'
 import HorizontalFooter from '../../../components/Footer/HorizontalFooter';
 import { exploreTopics, popularTopics } from './data'
+import ExploreHeader from '../ExploreHeader'
 
 const Topics = () => {
 
-    const { path } = useRouteMatch();
 
 
     useEffect(() => {
@@ -15,19 +14,7 @@ const Topics = () => {
 
     return (
         <Box width="100%">
-            <Box id='explore-header' width="100%" borderBottom="1px" borderColor="gray.200" style={{ position: "sticky", top: "0" }}>
-                <UnorderedList listStyleType="none" display="flex" justifyContent="center" alignItems="center" width="100%" fontSize="14px" marginLeft={100}>
-                    <ListItem marginRight="24px" className='explore-active' padding="16px 0px"><Link to={"/explore"}>Explore</Link></ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px"><Link to={`${path}`}>Topics</Link></ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">Trending</ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">Collections</ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">Events</ListItem>
-                    <ListItem marginRight="24px" padding="16px 0px">GitHub Sponsors</ListItem>
-                    <Box>
-                        <Button padding="8px 16px" fontSize="14px" color="#24292F" marginLeft="60px" backgroundColor="#F6F8FA" border="1px" borderColor="gray.200">Get email updates</Button>
-                    </Box>
-                </UnorderedList>
-            </Box>
+            <ExploreHeader />
             <Box paddingY="40px" textAlign="center" backgroundColor="gray.50" borderBottom="1px" borderColor="gray.200">
                 <Text as="h1" fontSize="2rem" fontWeight="semibold" color="#24292F">Topics</Text>
                 <Text as="h2" fontSize="1rem" color="#57606a">Browse popular topics on GitHub.</Text>
