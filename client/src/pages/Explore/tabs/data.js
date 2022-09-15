@@ -106,3 +106,40 @@ export const popularTopics = [
         name: "html5"
     }
 ]
+
+
+export const trendingRepositoriesData = [
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            },
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/4375169?s=40&v=4"
+            },
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/296718?s=40&v=4"
+            },
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/19879272?s=40&v=4"
+            },
+        ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
+    }
+]
