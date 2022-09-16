@@ -141,5 +141,77 @@ export const trendingRepositoriesData = [
                 imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
             }
         ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
+    },
+    {
+        title: "TheAlgorithms / Python",
+        description: "All Algorithms implemented in Python",
+        programmingLanguge: "Python",
+        stars: 450,
+        forks: 12,
+        builts: [
+            {
+                imageUrl: "https://avatars.githubusercontent.com/u/366926?s=40&v=4"
+            }
+        ]
     }
 ]
