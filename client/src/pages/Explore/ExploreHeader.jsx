@@ -10,7 +10,7 @@ const ExploreHeader = () => {
                 <ListItem marginRight="24px" className='explore-active' padding="16px 0px"><Link to={"/explore"}>Explore</Link></ListItem>
                 <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/topics`}>Topics</Link></ListItem>
                 <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/trending`}>Trending</Link></ListItem>
-                <ListItem marginRight="24px" padding="16px 0px">Collections</ListItem>
+                <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/collections`}>Collections</Link></ListItem>
                 <ListItem marginRight="24px" padding="16px 0px">Events</ListItem>
                 <ListItem marginRight="24px" padding="16px 0px">GitHub Sponsors</ListItem>
                 <Box>
