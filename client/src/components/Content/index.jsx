@@ -8,6 +8,7 @@ import Explore from '../../pages/Explore';
 import Topics from '../../pages/Explore/tabs/Topics';
 import Trending from '../../pages/Explore/tabs/Trending';
 import Collections from '../../pages/Explore/tabs/Collections';
+import Events from '../../pages/Explore/tabs/Events';
 
 
 const Content = () => {
@@ -37,6 +38,9 @@ const Content = () => {
                 </Route>
                 <Route exact path="/explore/collections">
                     <Collections />
+                </Route>
+                <Route exact path="/explore/events">
+                    <Events />
                 </Route>
             </Switch>
         </>
