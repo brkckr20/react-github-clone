@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Box, Button, Container, Grid, GridItem, Image, Text } from '@chakra-ui/react'
 import HorizontalFooter from '../../../components/Footer/HorizontalFooter';
-import { eventData, exploreTopics } from './data'
+import { eventData } from './data'
 import ExploreHeader from '../ExploreHeader'
 
 const Events = () => {
@@ -46,8 +46,9 @@ const Events = () => {
                             }
 
                         </GridItem>
-                        <GridItem colSpan="1">
-                            1
+                        <GridItem colSpan="1" padding="40px 24px 0">
+                            <Text as="h2" fontWeight="semibold" mb="15px">Sponsored by GitHub</Text>
+                            <Text as="p">No event</Text>
                         </GridItem>
                     </Grid>
                 </Container>

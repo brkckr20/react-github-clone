@@ -226,17 +226,17 @@ export const eventData = [
         desc: "Amplify, promote and empower the voices of Latinx in tech. You belong here! Let’s join forces and share our expertise with other Latinx — let’s shine together."
     },
     {
-        id: 2,
+        id: 11,
         image: "https://events-feed.github.com/events/OctogatosConf22cfp/meetup.png",
-        title: "All Things Open 2022",
-        date: "October 30, 2022 - November 02, 2022",
-        desc: "A universe of events and platforms focused on open source, open tech and the open web."
+        title: "Octogatos Conf22 Call for Papers",
+        date: "April 22, 2022 - September 25, 2022",
+        desc: "Amplify, promote and empower the voices of Latinx in tech. You belong here! Let’s join forces and share our expertise with other Latinx — let’s shine together."
     },
     {
-        id: 3,
-        image: "https://events-feed.github.com/events/github-universe-2022/universe.jpg",
-        title: "GitHub Universe 2022",
-        date: "November 09, 2022 - November 10, 2022",
-        desc: "Register now to attend GitHub Universe virtually or in-person at the Yerba Buena Center for the Arts in San Francisco on November 9-10."
-    }
+        id: 12,
+        image: "https://events-feed.github.com/events/OctogatosConf22cfp/meetup.png",
+        title: "Octogatos Conf22 Call for Papers",
+        date: "April 22, 2022 - September 25, 2022",
+        desc: "Amplify, promote and empower the voices of Latinx in tech. You belong here! Let’s join forces and share our expertise with other Latinx — let’s shine together."
+    },
 ]

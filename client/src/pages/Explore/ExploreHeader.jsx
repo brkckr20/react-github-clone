@@ -12,7 +12,7 @@ const ExploreHeader = () => {
                 <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/trending`}>Trending</Link></ListItem>
                 <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/collections`}>Collections</Link></ListItem>
                 <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/events`}>Events</Link></ListItem>
-                <ListItem marginRight="24px" padding="16px 0px">GitHub Sponsors</ListItem>
+                <ListItem marginRight="24px" padding="16px 0px"><Link to={`/explore/sponsors`}>Github Sponsors</Link></ListItem>
                 <Box>
                     <Button padding="8px 16px" fontSize="14px" color="#24292F" marginLeft="60px" backgroundColor="#F6F8FA" border="1px" borderColor="gray.200">Get email updates</Button>
                 </Box>
