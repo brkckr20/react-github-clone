@@ -240,3 +240,40 @@ export const eventData = [
         desc: "Amplify, promote and empower the voices of Latinx in tech. You belong here! Let’s join forces and share our expertise with other Latinx — let’s shine together."
     },
 ]
+
+
+export const ecosystem = [
+    {
+        title: "Cargo",
+    },
+    {
+        title: "composer",
+    },
+    {
+        title: "GitHub Actions",
+    },
+    {
+        title: "go",
+    },
+    {
+        title: "maven",
+    },
+    {
+        title: "npm",
+    },
+    {
+        title: "nuget",
+    },
+    {
+        title: "pip",
+    },
+    {
+        title: "RubyGems",
+    }
+]
+
+export const sponsorsFilter = [
+    {
+        title: "Allows one-time payment",
+    }
+]
