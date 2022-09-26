@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
-import { Box, Button, Container, Grid, GridItem, ListItem, Text, UnorderedList } from '@chakra-ui/react'
+import { Box, Button, Container, Grid, GridItem, Image, ListItem, Text, UnorderedList } from '@chakra-ui/react'
 import HorizontalFooter from '../../../components/Footer/HorizontalFooter';
-import ExploreHeader from '../ExploreHeader'
-import { FaCheck } from 'react-icons/fa'
+import ExploreHeader from '../ExploreHeader';
+import { FaCheck } from 'react-icons/fa';
+import { AiFillHeart } from 'react-icons/ai';
+import { FcInfo } from 'react-icons/fc';
+import { BsHeart } from 'react-icons/bs';
 import { ecosystem, sponsorsFilter } from './data';
 
 const Sponsors = () => {
@@ -60,6 +63,34 @@ const Sponsors = () => {
                                     borderColor="gray.400"
 
                                 >Most used</Button>
+                            </Box>
+                            <Box className='sponsors-wrapper'>
+                                <Box className="sponsors-card">
+                                    <Box p="18px">
+                                        <Box display="flex" alignItems="center">
+                                            <AiFillHeart fill='#57606a' size={20} />
+                                            <Text ml="10px">You depend on <Text as="span"> 158 repositories they own or maintain</Text></Text>
+                                        </Box>
+                                        <Box display="flex">
+                                            <Box display="flex" alignItems="center">
+                                                <Image borderRadius="50%" width="60px" height="60px" src='https://avatars.githubusercontent.com/u/170270?v=4' alt="birkiüç" />
+                                                <Box>
+                                                    <Text>sindresorhus</Text>
+                                                    <Box display="flex">
+                                                        <FcInfo />
+                                                        <Text>indeedeng and 319 others sponsor, including 30 organizations</Text>
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                            <Box>
+                                                <Button>
+                                                    <BsHeart />
+                                                    <Text as="span">Sponsors</Text>
+                                                </Button>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                </Box>
                             </Box>
                         </GridItem>
                         <GridItem
