@@ -12,7 +12,7 @@ const Sidebar = () => {
         <>
             {
                 location.pathname === "/" ? (
-                    <div id='sidebar'>
+                    <Box id='sidebar' width={{xl : "1200px"}}>
                         <div className="sidebar-content">
                             <Box
                                 display="flex"
@@ -50,7 +50,7 @@ const Sidebar = () => {
 
                             </div>
                         </div>
-                    </div>
+                    </Box>
                 ) : ''
             }
         </>
